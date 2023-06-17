@@ -1,0 +1,12 @@
+<h1>{{pageTitle}}</h1>
+<img src="{{url}}" alt="image" height="300px">
+<button disabled={{btnStatus}}>Click</button>
+
+<img [src]="url" alt="image" height="300px">
+<button [disabled]="btnStatus">Click</button>
+<hr>
+<button (click)="changeTitle()">Change Title</button>
+<hr/>
+<input type="text" [(ngModel)]="username">
+
+<p>My name is {{username}}</p>
